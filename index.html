@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX - Premium Athletics</title>
+    <meta name="description" content="APEX Official Website - Premium athletic wear and footwear">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="banner-content">
+            <span>Free delivery on orders over ₹50 | Free returns on all orders</span>
+            <a href="#" class="banner-link">Learn More</a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="nav-logo">
+                    <svg viewBox="0 0 120 40" class="apex-logo">
+                        <defs>
+                            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- A -->
+                        <path d="M8 32 L16 8 L24 32 M12 24 L20 24 " stroke="url(#logoGradient)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- P -->
+                        <path d="M30 32 L30 8 L42 8 Q48 8 48 14 Q48 20 42 20 L30 20" stroke="url(#logoGradient)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- E -->
+                        <path d="M54 32 L54 8 L70 8 M54 20 L66 20 M54 32 L70 32" stroke="url(#logoGradient)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- X -->
+                        <path d="M76 8 L92 32 M92 8 L76 32" stroke="url(#logoGradient)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- Accent dot -->
+                        <circle cx="98" cy="28" r="3" fill="url(#logoGradient)"/>
+                    </svg>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="#" class="nav-link active" data-page="home">New & Featured</a>
+                    <a href="#" class="nav-link" data-page="men">Men</a>
+                    <a href="#" class="nav-link" data-page="women">Women</a>
+                    <a href="#" class="nav-link" data-page="kids">Kids</a>
+                    <a href="#" class="nav-link" data-page="sale">Sale</a>
+                    <a href="#" class="nav-link" data-page="snkrs">APEX Elite</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Search products..." class="search-input">
+                    <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 21L16.514 16.506M19 10.5C19 15.194 15.194 19 10.5 19S2 15.194 2 10.5 5.806 2 10.5 2 19 5.806 19 10.5Z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="nav-icons">
+                    <button class="icon-btn" data-action="favorites">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20.84 4.61C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.61L12 5.67L10.94 4.61C9.9083 3.5783 8.50903 2.9987 7.05 2.9987C5.59096 2.9987 4.19169 3.5783 3.16 4.61C2.1283 5.6417 1.5487 7.04097 1.5487 8.5C1.5487 9.95903 2.1283 11.3583 3.16 12.39L12 21.23L20.84 12.39C21.351 11.8792 21.7563 11.2728 22.0329 10.6054C22.3095 9.93789 22.4518 9.22248 22.4518 8.5C22.4518 7.77752 22.3095 7.06211 22.0329 6.39461C21.7563 5.72711 21.351 5.1208 20.84 4.61Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
+                    <button class="icon-btn" data-action="cart">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M3 6H21" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content Container -->
+    <div id="pageContent">
+        <!-- Home Page (Default) -->
+        <div class="page-content active" id="home">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1400&h=900&fit=crop" alt="APEX Premium Collection" class="hero-img">
+                        <div class="hero-overlay"></div>
+                    </div>
+                    <div class="hero-text">
+                        <h1 class="hero-title">APEX PREMIUM COLLECTION</h1>
+                        <p class="hero-subtitle">Performance • Innovation • Style</p>
+                        <p class="hero-description" style="font-size: 30px; font-weight: 600;">Hello, SHIVAM VERMA</p>
+                        <p class="hero-description">Welcome to APEX Premium Collection. Experience the pinnacle of athletic performance with our most advanced design yet. Crafted with premium materials and cutting-edge technology.</p>
+                        <div class="hero-cta">
+                            <button class="cta-primary" data-action="shop-now">Shop Collection</button>
+                            <button class="cta-secondary" data-action="learn-more">Our Story</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Section -->
+            <section class="featured">
+                <div class="container">
+                    <h2 class="section-title">Premium Collections</h2>
+                    <div class="featured-grid">
+                        <div class="featured-card">
+                            <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=700&h=500&fit=crop" alt="Premium Running">
+                            <div class="card-content">
+                                <h3>Skating Running</h3>
+                                <p>Engineered for Performance</p>
+                                <button class="card-btn" data-action="shop-running">Explore</button>
+                            </div>
+                        </div>
+                        <div class="featured-card">
+                            <img src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=700&h=500&fit=crop" alt="Premium Basketball">
+                            <div class="card-content">
+                                <h3>Pro Basketball</h3>
+                                <p>Gaming Court</p>
+                                <button class="card-btn" data-action="shop-basketball">Explore</button>
+                            </div>
+                        </div>
+                        <div class="featured-card">
+                            <img src="https://images.unsplash.com/photo-1584735175315-9d5df23860e6?w=700&h=500&fit=crop" alt="Premium Lifestyle">
+                            <div class="card-content">
+                                <h3>Luxury Lifestyle</h3>
+                                <p>Elevated Everyday</p>
+                                <button class="card-btn" data-action="shop-lifestyle">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Trending Section -->
+            <section class="trending">
+                <div class="container">
+                    <h2 class="section-title">Trending Now</h2>
+                    <div class="trending-grid">
+                        <div class="trending-item" data-product="air-max-270">
+                            <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=500&h=500&fit=crop" alt="APEX Max 270">
+                            <div class="item-info">
+                                <h4>APEX Max 270 Premium</h4>
+                                <p>Lifestyle Shoes</p>
+                                <span class="price">$180</span>
+                                <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="trending-item" data-product="air-jordan-1">
+                            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500&h=500&fit=crop" alt="APEX Elite 1">
+                            <div class="item-info">
+                                <h4>APEX Elite 1 Mid Premium</h4>
+                                <p>Basketball Shoes</p>
+                                <span class="price">$130</span>
+                                <button class="add-to-cart" data-product-id="2">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="trending-item" data-product="react-infinity">
+                            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=500&h=500&fit=crop" alt="APEX React Infinity">
+                            <div class="item-info">
+                                <h4>APEX React Infinity Elite</h4>
+                                <p>Premium Running Shoes</p>
+                                <span class="price">$190</span>
+                                <button class="add-to-cart" data-product-id="3">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="trending-item" data-product="dunk-low">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=500&fit=crop" alt="APEX Dunk Low">
+                            <div class="item-info">
+                                <h4>APEX Dunk Low Premium</h4>
+                                <p>Unisex Lifestyle </p>
+                                <span class="price">$120</span>
+                                <button class="add-to-cart" data-product-id="4">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="trending-item" data-product="dunk-low">
+                            <img src="https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?w=500&h=500&fit=crop" alt="APEX Dunk Low">
+                            <div class="item-info">
+                                <h4>Cartoon Shocks</h4>
+                                <p>Female Lifestyle Shocks</p>
+                                <span class="price">$120</span>
+                                <button class="add-to-cart" data-product-id="4">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="trending-item" data-product="dunk-low">
+                            <img src="https://images.unsplash.com/photo-1584735175315-9d5df23860e6?w=700&h=500&fit=crop" alt="APEX Dunk Low">
+                            <div class="item-info">
+                                <h4>Air Jorden 1</h4>
+                                <p>Unisex Lifestyle Shoes</p>
+                                <span class="price">$120</span>
+                                <button class="add-to-cart" data-product-id="4">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Membership Section -->
+            <section class="membership">
+                <div class="container">
+                    <div class="membership-content">
+                        <h2>APEX Elite Membership</h2>
+                        <p>Unlock exclusive access to premium products, early releases, and personalized experiences.</p>
+                        <div class="membership-benefits">
+                            <div class="benefit">
+                                <h4>Early Access</h4>
+                                <p>Be first to shop new releases</p>
+                            </div>
+                            <div class="benefit">
+                                <h4>Free Premium Delivery</h4>
+                                <p>Fast, free shipping on all orders</p>
+                            </div>
+                            <div class="benefit">
+                                <h4>Exclusive Products</h4>
+                                <p>Member-only colorways and designs</p>
+                            </div>
+                        </div>
+                        <button class="cta-primary" data-action="join-membership">Join Elite</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Men's Page -->
+        <div class="page-content" id="men">
+            <section class="category-hero">
+                <div class="container">
+                    <h1 class="category-title">Men's Collection</h1>
+                    <p class="category-subtitle">Premium athletic wear designed for the modern athlete</p>
+                </div>
+            </section>
+            <section class="products-grid">
+                <div class="container">
+                    <div class="filter-bar">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="shoes">Shoes</button>
+                        <button class="filter-btn" data-filter="clothing">Clothing</button>
+                        <button class="filter-btn" data-filter="accessories">Accessories</button>
+                    </div>
+                    <div class="products-container">
+                        <!-- Products will be loaded here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Women's Page -->
+        <div class="page-content" id="women">
+            <section class="category-hero">
+                <div class="container">
+                    <h1 class="category-title">Women's Collection</h1>
+                    <p class="category-subtitle">Empowering designs for every challenge</p>
+                </div>
+            </section>
+            <section class="products-grid">
+                <div class="container">
+                    <div class="filter-bar">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="shoes">Shoes</button>
+                        <button class="filter-btn" data-filter="clothing">Clothing</button>
+                        <button class="filter-btn" data-filter="accessories">Accessories</button>
+                    </div>
+                    <div class="products-container">
+                        <!-- Products will be loaded here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Kids Page -->
+        <div class="page-content" id="kids">
+            <section class="category-hero">
+                <div class="container">
+                    <h1 class="category-title">Kids Collection</h1>
+                    <p class="category-subtitle">Built for young athletes and dreamers</p>
+                </div>
+            </section>
+            <section class="products-grid">
+                <div class="container">
+                    <div class="filter-bar">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="shoes">Shoes</button>
+                        <button class="filter-btn" data-filter="clothing">Clothing</button>
+                        <button class="filter-btn" data-filter="accessories">Accessories</button>
+                    </div>
+                    <div class="products-container">
+                        <!-- Products will be loaded here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sale Page -->
+        <div class="page-content" id="sale">
+            <section class="category-hero sale-hero">
+                <div class="container">
+                    <h1 class="category-title">Premium Sale</h1>
+                    <p class="category-subtitle">Up to 50% off selected premium items</p>
+                </div>
+            </section>
+            <section class="products-grid">
+                <div class="container">
+                    <div class="filter-bar">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="shoes">Shoes</button>
+                        <button class="filter-btn" data-filter="clothing">Clothing</button>
+                        <button class="filter-btn" data-filter="accessories">Accessories</button>
+                    </div>
+                    <div class="products-container">
+                        <!-- Products will be loaded here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- SNKRS Page -->
+        <div class="page-content" id="snkrs">
+            <section class="category-hero snkrs-hero">
+                <div class="container">
+                    <h1 class="category-title">APEX Elite</h1>
+                    <p class="category-subtitle">Exclusive drops and limited editions</p>
+                </div>
+            </section>
+            <section class="products-grid">
+                <div class="container">
+                    <div class="filter-bar">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="shoes">Shoes</button>
+                        <button class="filter-btn" data-filter="clothing">Clothing</button>
+                        <button class="filter-btn" data-filter="accessories">Accessories</button>
+                    </div>
+                    <div class="products-container">
+                        <!-- Products will be loaded here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Find A Store</h4>
+                    <ul>
+                        <li><a href="#" data-action="store-locator">Store Locator</a></li>
+                        <li><a href="#" data-action="apex-app">APEX App</a></li>
+                        <li><a href="#" data-action="become-member">Become A Member</a></li>
+                        <li><a href="#" data-action="student-discount">Student Discounts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#" data-action="order-status">Order Status</a></li>
+                        <li><a href="#" data-action="delivery">Delivery</a></li>
+                        <li><a href="#" data-action="returns">Returns</a></li>
+                        <li><a href="#" data-action="payment">Payment Options</a></li>
+                        <li><a href="#" data-action="contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>About APEX</h4>
+                    <ul>
+                        <li><a href="#" data-action="news">News</a></li>
+                        <li><a href="#" data-action="careers">Careers</a></li>
+                        <li><a href="#" data-action="investors">Investors</a></li>
+                        <li><a href="#" data-action="sustainability">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <div class="social-icons">
+                        <a href="https://github.com/shivamverma-6174" class="social-icon" data-action="twitter">GitHub</a>
+                        <a href="#" class="social-icon" data-action="facebook">Facebook</a>
+                        <a href="#" class="social-icon" data-action="youtube">Youtube</a>
+                        <a href="#" class="social-icon" data-action="instagram">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <span>&copy; 2025 APEX Athletics, Inc. All rights reserved by Shivam Verma</span>
+                    <div class="legal-links">
+                        <a href="#" data-action="guides">Guides</a>
+                        <a href="#" data-action="terms-sale">Terms of Sale</a>
+                        <a href="#" data-action="terms-use">Terms of Use</a>
+                        <a href="#" data-action="privacy">APEX Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be loaded here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total: ₹<span id="cartTotal">0</span></strong>
+            </div>
+            <button class="checkout-btn" data-action="checkout">Secure Checkout</button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
